@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
       browser = (WebView)findViewById(R.id.webView1);
       browser.setWebViewClient(new MyBrowser());
    }
-
+//Adding git
 
    public void open(View view){
       String url = field.getText().toString();
