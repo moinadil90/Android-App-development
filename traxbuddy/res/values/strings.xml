@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">traxbuddy</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">TraxBuddy</string>
+    <string name="add_friends">My Friend List</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="signup"></string>
+    <string name="bRegister"></string>
+   
     
-<!-- Button text -->
-    <string name="btn_logout_from_google">Logout from Google</string>
-    <string name="btn_revoke_access">Revoke Access</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >My Profile</item>
+        <item >Be a part of this Campaign</item>
+        <item >Settings</item>
+        <item >Help</item>
+        <item >History</item>
+        <item >Log Out</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_myprofile</item>
+        <item>@drawable/ic_campaign</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_help</item>
+        <item>@drawable/ic_history</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
 </resources>

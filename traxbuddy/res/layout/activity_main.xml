@@ -1,74 +1,197 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.DrawerLayout 
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity" >
+    android:layout_height="match_parent" >
     
-      <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/> 
- 
-    <LinearLayout
-        android:id="@+id/llProfile"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:visibility="gone">
- 
-        <ImageView
-            android:id="@+id/imgProfilePic"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
- 
-        <LinearLayout
+    <!-- Registration -->
+    
+    <!-- Registration Closed -->
+
+
+    <!-- Framelayout to display Fragments -->
+     <FrameLayout 
+       android:id="@+id/frame_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+       
+         <fragment
+             android:id="@+id/map"
+             android:name="com.google.android.gms.maps.MapFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+         
+         
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom" >
+
+          <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0" >
+          </View>
+          
+          <ImageButton
+            android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical"
-            android:layout_weight="2" >
- 
-            <TextView
-                android:id="@+id/txtName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textSize="20dp" />
- 
-            <TextView
-                android:id="@+id/txtEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textSize="18dp" />
-        </LinearLayout>
-    </LinearLayout>
- 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_sign_in"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
- 
-    <Button
-        android:id="@+id/btn_sign_out"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_logout_from_google"
-        android:visibility="gone"
-        android:layout_marginBottom="10dp"/>
- 
-    <Button
-        android:id="@+id/btn_revoke_access"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_revoke_access"
-        android:visibility="gone" />
- 
-</LinearLayout>
+            android:layout_marginLeft="15dip"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/nnavigate_to_friends" 
+            android:layout_marginBottom="30dp"/>
+          
+          
+           <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+          
+          <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/send_my_location2" />
+          
+           <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+            
+          <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/sstart_stop_location_sharing2" />
+          
+           <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+          
+          <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/trackme" />
+          
+         </LinearLayout>
+
+      <ImageButton
+          android:id="@+id/imageButton5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:background="?android:selectableItemBackground"
+          android:layout_gravity="center|top"
+          android:src="@drawable/ssos" />
+      
+     
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Navigate" 
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="12dp"
+          android:gravity="bottom"/>
+       <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="My Location" 
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="90dp"
+          android:gravity="bottom"/>
+       <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Share/Unshare" 
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="170dp"
+          android:gravity="bottom"/>
+       <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Location" 
+          android:layout_marginBottom="-5dp"
+          android:layout_marginLeft="190dp"
+          android:gravity="bottom"/>
+       <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Track" 
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="280dp"
+          android:gravity="bottom"/>
+       <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Me" 
+          android:layout_marginBottom="-5dp"
+          android:layout_marginLeft="285dp"
+          android:gravity="bottom"/>
+      
+      <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+          </View>
+
+      
+      
+     </FrameLayout>    
+
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"        
+        android:listSelector="@drawable/list_selector"
+        android:background="@color/list_background"/>
+  </android.support.v4.widget.DrawerLayout> 
+  
